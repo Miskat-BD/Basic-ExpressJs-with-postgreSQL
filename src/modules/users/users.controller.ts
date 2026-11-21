@@ -92,7 +92,7 @@ const deleteUserById = async (req: Request, res: Response) => {
         const result = await usersService.deleteUserFromDB(id as string)
         // console.log(result)
         if (result.rowCount === 0) {
-           return res.status(404).json({
+            return res.status(404).json({
                 success: false,
                 message: "User not found!"
             })
