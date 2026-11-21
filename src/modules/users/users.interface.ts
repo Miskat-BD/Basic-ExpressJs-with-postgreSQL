@@ -2,5 +2,6 @@ export interface IUsers {
     name: string,
     age?: number,
     email: string,
-    password: string
+    password: string,
+    is_Active: boolean
 }
