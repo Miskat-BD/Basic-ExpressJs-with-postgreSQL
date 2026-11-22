@@ -30,6 +30,7 @@ const getUserByIdFromDB = async (id: string) => {
 
 const updateUserFromDB = async (payload: Partial<IUsers>, id: string) => {
     const { name, age, password, is_Active } = payload
+    const hashPassword = await bcrypt.hash(password as string, 10)
     // console.log(name, age, password)
     const result = await pool.query(`
             UPDATE users 
@@ -40,7 +41,7 @@ const updateUserFromDB = async (payload: Partial<IUsers>, id: string) => {
             is_Active = COALESCE($4, is_Active),
             updated_at = NOW()
             WHERE id = $5 RETURNING *;
-            `, [name ?? null, age ?? null, password ?? null, is_Active ?? null, id])
+            `, [name ?? null, age ?? null, hashPassword ?? null, is_Active ?? null, id])
     return result;
 }
 
