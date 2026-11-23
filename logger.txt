@@ -3,3 +3,17 @@ Method: GET | URL: /api/v1/users | Time: 1795430812232
 Method: GET | URL: /api/v1/users/5 | Time: 1795430826305
 
 Method: GET | URL: / | Time: 1795430837241
+
+Method: GET | URL: /api/v1/users | Time: 1795438999147
+
+Method: GET | URL: /api/v1/profile | Time: 1795439004377
+
+Method: GET | URL: /api/v1/users | Time: 1795439014932
+
+Method: GET | URL: /api/v1/users | Time: 1795439313484
+
+Method: GET | URL: /api/v1/users | Time: 1795439325224
+
+Method: GET | URL: /api/v1/users | Time: 1795439349094
+
+Method: GET | URL: /api/v1/users | Time: 1795439586981
