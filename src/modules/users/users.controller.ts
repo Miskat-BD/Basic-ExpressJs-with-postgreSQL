@@ -28,6 +28,7 @@ const getAllUsers = async (req: Request, res: Response) => {
         //     message: "All Users Data Retrived Successfully !!",
         //     data: result.rows
         // })
+
         sendResponse(res, {
             statusCode: 200,
             success: true,
@@ -130,5 +131,5 @@ export const usersController = {
     getAllUsers,
     getUserById,
     updateUserById,
-    deleteUserById
+    deleteUserById,
 }
