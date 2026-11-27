@@ -131,5 +131,5 @@ export const usersController = {
     getAllUsers,
     getUserById,
     updateUserById,
-    deleteUserById,
+    deleteUserById
 }
